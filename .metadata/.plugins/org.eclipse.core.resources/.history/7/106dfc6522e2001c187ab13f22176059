@@ -96,7 +96,6 @@ public class Calculator implements ActionListener{
 		panel.add(divButton);
 		
 		frame.add(panel);
-		frame.add(negButton);
 		frame.add(delButton);
 		frame.add(clrButton);
 		frame.add(textfield);
@@ -172,11 +171,7 @@ public class Calculator implements ActionListener{
 				textfield.setText(textfield.getText() + string.charAt(i));
 			}
 		}
-		if (e.getSource() == negButton) {
-			double temp = Double.parseDouble(textfield.getText());
-			temp*=-1;
-			textfield.setText(String.valueOf(temp));
-		}
+		
 		
 	}
 
